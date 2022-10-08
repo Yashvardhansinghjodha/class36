@@ -6,7 +6,7 @@ function setup(){
   database = firebase.database();
 
   console.log(database);
-  createCanvas(500,1000);
+  createCanvas(600,1000);
 
   Ball = createSprite(250,250,40,40);
   Ball.shapeColor = "red";
