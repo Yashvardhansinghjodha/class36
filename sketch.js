@@ -6,9 +6,9 @@ function setup(){
   database = firebase.database();
 
   console.log(database);
-  createCanvas(500,500);
+  createCanvas(500,1000);
 
-  Ball = createSprite(250,250,10,10);
+  Ball = createSprite(250,250,40,40);
   Ball.shapeColor = "red";
   
   BallPosition = database.ref("ball/position");
@@ -20,16 +20,16 @@ function draw(){
   background("white");
   
     if(keyDown(LEFT_ARROW)){
-      writePosition(-1,0);
+      writePosition(-10,0);
     }
     else if(keyDown(RIGHT_ARROW)){
-      writePosition(1,0);
+      writePosition(10,0);
     }
     else if(keyDown(UP_ARROW)){
-      writePosition(0,-1);
+      writePosition(0,-10);
     }
     else if(keyDown(DOWN_ARROW)){
-      writePosition(0,+1);
+      writePosition(0,+10);
     }
     drawSprites();
   
