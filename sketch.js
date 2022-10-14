@@ -37,7 +37,7 @@ function draw(){
 
 function writePosition(x,y){
   BallPosition.set({
-    "x" : position.x + x,
+    "x" : position.x + x ,
     "y" : position.y + y  
   })
  
